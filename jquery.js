@@ -1,15 +1,24 @@
 //ヘッダー
 var _window = $(window),
     _header = $('.header'),
+    _header_color = $('.header-color'),
+    _logo = $('.logo'),
+    _logo_scroll = $('.logo-scroll'),
     heroBottom;
  
 _window.on('scroll',function(){
     heroBottom = $('h1').height();
     if(_window.scrollTop() > heroBottom){
-        _header.addClass('transform');   
+        _header.addClass('transform');
+        _header_color.addClass('transform');
+        _logo.addClass('transform');
+        _logo_scroll.addClass('transform');
     }
     else{
-        _header.removeClass('transform');   
+        _header.removeClass('transform');
+        _header_color.removeClass('transform');
+        _logo.removeClass('transform');
+        _logo_scroll.removeClass('transform');
     }
 });
  
