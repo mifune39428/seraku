@@ -7,6 +7,8 @@
   justify-content: space-between;
   background-color:rgba(0,0,0,0);
   padding: 20px;
+  position: fixed;
+  width: 100%;
 }
 .nav-button {
   display: none;
@@ -34,7 +36,23 @@ li {
   background-color: white;
   color: #333333;
 }
-.logo img{
+.header-color.transform {
+	color: #333333;
+}
+.logo.transform {
+	display: none;
+}
+.logo-scroll {
+	display: none;
+}
+.logo-scroll.transform {
+	display: block;
+}
+.logo-scroll.transform img {
+	width: 300px;
+}
+
+.logo img {
   width: 300px;
 }
 .btn-entry-sm {
@@ -61,7 +79,7 @@ li {
 }
 h1 {
   position: absolute;
-  top: 650px;
+  top: 550px;
   left: 100px;
   z-index: 9;
   font-size: 150px;
